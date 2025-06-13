@@ -132,9 +132,9 @@ header {
     
 }
 .conteudo{
-background-color: var(--cor-tercearia);
-color: var(--cor-quarta);
-font-family: "Questrial", sans-serif;
+    background-color: var(--cor-tercearia);
+    color: var(--cor-quarta);
+    font-family: "Questrial", sans-serif;
 }
 .titulo_conteudo{
     padding: 3%;
