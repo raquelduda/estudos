@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha lista</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+     <!-- CABEÇALHO DO SITE    -->
+       <div class="principal">
+    <header>
+        <div class="container">
+            <a href="../index.html"> <img class="logo" src="../assets/novalogo.png" alt="logo quel movies"></a>
+            <nav class="menu">
+                    <a href="../index.html">home</a>
+                    <a href="#filmes e series"> catálogo</a>
+                    <a href="#contato">contato</a>
+                    <a href="../header_nav/lista.html"> lista</a>
+            </nav>
+        </div>
+         </header>
+         <!-- SECTION DE LISTA DE FILMES PARA ASSISTIR -->
+          <section class="lista">
+            <div class="lista_titulo">
+                <h1> MINHA LISTA DE FILMES</h1> 
+            </div>
+          </section>
+        
+          
+           <!-- FILMES E SERIES -->
+
+    <section class="conteudo">
+        <div class="titulo_conteudo">
+        <h1 >FILMES E SÉRIES</h1>
+       
+        </div>
+          <p  class="paragrafo_filmes"> Selecione o títulos para a sua lista de desejo:</p>
+        <div class="grid"> 
+        <img src="../assets/bee movie poster.webp" alt="bee movie" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/ta chovendo hamburguer poster.jpg" alt="chovendo hamburguer" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/meu vizinho totoro poster.webp" alt="totoro" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/se a vida te der tangerinas poster.jpg" alt=" e a vida te der tangerinas" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/shrek poster.jpg" alt="shrek" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/questão de tempo poster.jpg" alt="questao de tempo" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/halloween 4 poster.jpg" alt=" halloween 4" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/fightclub poster.webp" alt="figth club" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/omdpl poster.jpg" alt="omdpl" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/o segredo poster.jpg" alt="o segredo" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/a batalha dos 100 poster.jpg" alt="os 100" class="img_grid" onclick="adicionarLista()">
+        <img src="../assets/BB poster.jpg" alt="bb poster" class="img_grid" onclick="adicionarLista()">
+        </div>
+        </section>
+   
+        <script>
+
+
+fetch('https://api.tvmaze.com/search/shows?q=super')
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(item => {
+      console.log(item.show.name);
+      console.log('Imagem:', item.show.image?.medium);
+    });
+  })
+  .catch(err => console.error('Erro:', err));
+
+        </script>
+</body>
+</html>
