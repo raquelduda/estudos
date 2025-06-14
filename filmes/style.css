@@ -57,19 +57,19 @@ header {
 
 }
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .menu a {
-  text-decoration: none;
-  font-family: "Questrial", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 20px;
-  color: #E0E0E0;
+    text-decoration: none;
+    font-family: "Questrial", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #E0E0E0;
 }
 .menu :hover {
     color: var(--cor-tercearia);
@@ -173,14 +173,15 @@ header {
 } */
 
 .lista_titulo {
-  padding: 3%;
-  background-color: var(--cor-secundaria);
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-color: var(--cor-quarta);
+    padding: 3%;
+    background-color: var(--cor-secundaria);
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: var(--cor-quarta);
+    width: 100vw;
 }
 .paragrafo_filmes {
     padding: 2rem;
@@ -191,5 +192,22 @@ color: var(--cor-quarta);
 }
 .grid :hover {
     transform: scale(1.1);
-  box-shadow: 10px 10px 5px gray;
+    box-shadow: 10px 10px 5px gray;
 }
+.adicionar_item {
+    color: var(--cor-tercearia);
+    border-radius: 50px;
+    padding: 15px;
+    margin: 20px;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
